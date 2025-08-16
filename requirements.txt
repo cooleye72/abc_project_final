@@ -20,3 +20,4 @@ webdriver-manager
 tavily-python
 pytz
 tokenizers
+pysqlite3-binary
