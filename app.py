@@ -241,7 +241,7 @@ def login_page():
             """, unsafe_allow_html=True)
             
             st.markdown("""
-            ![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cooleye72_project_alpha&metric=alert_status)
+            ![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cooleye72_abc_project_final&metric=alert_status)
             """, unsafe_allow_html=True)
             
             st.markdown("""
