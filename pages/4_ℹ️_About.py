@@ -14,7 +14,7 @@ def about_page():
         
         Is there a better way to search for the right company and give you insights and recommendation based on your problem statement?
         
-        Yes! This web application, a prototype from the AI Champion Bootcamp, **demonstrates an AI agent's ability to search for and analyze**, offering insights and recommendations based on your problem..
+        Yes! This prototype web application **demonstrates an AI agent's ability to search for and analyze**, offering insights and recommendations based on your problem...
         """)
     
     # Project Scope Section
@@ -29,7 +29,7 @@ def about_page():
         """)
     
     # # Data Sources Section
-    # with st.expander("📂 Data Sources"):
+    # with st.expander("📂 How to use?"):
     #     st.markdown("""
     #     - Primary Source: [IMDA Innovative Tech Companies Directory](
     #       https://www.imda.gov.sg/resources/innovative-tech-companies-directory)
