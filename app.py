@@ -186,7 +186,7 @@ def main_app_page():
     pg.run()
     
     # st.markdown("""
-    # ![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cooleye72_project_alpha&metric=alert_status)
+    # ![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cooleye72_abc_project_final&metric=alert_status)
     # """, unsafe_allow_html=True)
     # st.markdown("""
     # ![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)

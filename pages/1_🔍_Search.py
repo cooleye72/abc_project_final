@@ -20,9 +20,15 @@ from helper_functions.query import log_query
 
 
 # for streamlit cloud compatibility
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except Exception as e:
+    st.warning("""
+    ⚠️ This website is newly setup and currently has no data. 
+    Please go to the Web Scraping tab to scrape data first.
+    """)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
