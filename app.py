@@ -148,7 +148,7 @@ def main_app_page():
     # Define your navigation pages
     search = st.Page("pages/1_🔍_Search.py", title="Search")
     searchhistory = st.Page("pages/7_📜_SearchHistory.py", title="Search History")
-    webscraping = st.Page("pages/2_⚙️_WebScraping.py", title="Web Scraping (Admin Only)")
+    webscraping = st.Page("pages/2_⚙️_WebScraping.py", title="Web Scraping")
     about = st.Page("pages/4_ℹ️_About.py", title="About")
     methodology = st.Page("pages/5_🔬_Methodology.py", title="Methodology (Admin Only)")
     troubleshooting = st.Page("pages/6_🛠️_Troubleshooting.py", title="Troubleshooting")
@@ -168,7 +168,7 @@ def main_app_page():
                 # "Reports": [dashboard, bugs, alerts],
                 "Tools": [search, searchhistory, companydirectory],
                 "Info": [about],
-                "Troubleshoot": [troubleshooting]
+                "Troubleshoot": [webscraping, troubleshooting]
                 
             }
         )
