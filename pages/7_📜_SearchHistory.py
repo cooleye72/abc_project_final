@@ -65,10 +65,13 @@ def display_results():
         st.warning("Please login to view your search history")
         return
     
-    # Filter history for current user
-    user_queries = st.session_state.query_history[
-        st.session_state.query_history['user_email'] == user_email
-    ]
+    # Filter history for current user or admin login
+    if hasattr(st, 'user') and st.user.is_logged_in:
+        user_queries = st.session_state.query_history[
+            st.session_state.query_history['user_email'] == user_email
+        ]
+    else:
+        user_queries = st.session_state.query_history.copy()
     
     if user_queries.empty:
         st.info("You haven't made any searches yet")
@@ -85,7 +88,7 @@ def display_results():
             except:
                 time_str = "Unknown time"
                 
-            with st.expander(f"🗓️ {time_str}: {str(row['query'])[:50]}..."):
+            with st.expander(f"🗓️ {time_str}: {str(row['user_email'])}: {str(row['query'])[:50]}..."):
                 #st.caption(f"⏱️ {row['response_time']}s")
                 st.markdown(f"**Query:** {row['query']}")
                 #st.markdown("---")
