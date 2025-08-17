@@ -5,6 +5,17 @@ from datetime import datetime
 from logics.websitescrapping import process_all_pages
 from logics.vectordb import create_vector_db
 
+# for streamlit cloud compatibility
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except Exception as e:
+    st.warning("""
+    ⚠️ This website is newly setup and currently has no data. 
+    Please proceed with company data scraping first.
+    """)
+    
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

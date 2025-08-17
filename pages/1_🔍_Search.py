@@ -27,7 +27,7 @@ try:
 except Exception as e:
     st.warning("""
     ⚠️ This website is newly setup and currently has no data. 
-    Please go to the Web Scraping tab to scrape data first.
+    Please go to the Web Scraping tab to scrape company data first.
     """)
 
 # Configure logging
