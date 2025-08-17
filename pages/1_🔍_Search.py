@@ -79,7 +79,14 @@ def display_results():
                                             value=st.session_state.deep_search)
     
     # Search button
-    if st.button("Search", type="primary"):
+    # if st.button("Search", type="primary"):
+        
+    if st.button(
+            "Search", 
+            type="primary",
+            disabled=vectordb._collection.count() == 0,
+            help="Database is empty - please scrape data first" if vectordb._collection.count() == 0 else "Search for companies"
+        ):
         start_time = datetime.now()
         
         try:
