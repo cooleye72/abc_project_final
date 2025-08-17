@@ -270,12 +270,10 @@ def display_results():
     }
     </style>
     <div class="disclaimer">
-        <strong>IMPORTANT NOTICE:</strong><br>
-        This web application is a prototype developed solely for the AI Champion Bootcamp. <br><br>
-        While the data is based on real-world usage, it should be used <strong>for reference purposes only</strong> and <strong>NOT</strong> relied upon for decision-making. 
-        Guardrails have been implemented to generate outputs that are as accurate as possible; 
-        however, you <strong>must</strong> assume full responsibility for any use of the generated content. <br><br>
-        Always consult qualified professionals for advice.
+        <strong>Disclaimer:</strong><br>
+        This is a prototype web application. All data and outputs are provided for <strong>informational purposes only</strong> and <strong>should not</strong> be considered a substitute for professional advice. <br><br>
+        While we've implemented safeguards to improve accuracy, we cannot guarantee the reliability of the generated content. You assume full responsibility for any use of the information provided by this application. <br><br>
+        Always consult with a qualified professional before making any decisions.
     </div>
     """, unsafe_allow_html=True)
     
