@@ -20,12 +20,13 @@ def about_page():
     # Project Scope Section
     with st.expander("🔍 Project Scope", expanded=True):
         st.markdown("""
-        - **Purpose**: To showcase an AI agent's ability to search and analyze IMDA accredited companies
+        - **Purpose**: To showcase an AI agent's ability to search, analyze and recommendation IMDA accredited companies based on your problem statement.
         - **Functionality**:
-          - Search IMDA's innovative companies directory
+          - Search & recommend IMDA accredited companies which is publicly listed in IMDA website
           - Browse the history of your search queries
-          - List all companys in the directory 
-        - **Limitations**: Prototype for demonstration purposes only
+          - List all companys in the directory
+          - Update the database with new companies
+        - **Target Audience**: Businesses and individuals seeking technology solutions from IMDA accredited companies.
         """)
     
     # # Data Sources Section
