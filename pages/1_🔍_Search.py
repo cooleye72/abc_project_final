@@ -77,11 +77,8 @@ def display_results():
     # Toggle for deep search
     st.session_state.deep_search = st.checkbox("Enable Deep research",
                                                help="""When enabled, provides comprehensive analysis including:
-                                                    - Company overview
-                                                    - Business value proposition  
-                                                    - Technical capabilities
-                                                    - Personalized recommendations
-                                                    - TAL readiness status
+                                                    Company overview, Business value proposition, Technical capabilities,
+                                                    Personalized recommendations, TAL readiness status
                                                     (Takes about a min to process)""", 
                                             value=st.session_state.deep_search)
     
