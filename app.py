@@ -166,9 +166,9 @@ def main_app_page():
             {
                 #"Account": [logout_page],
                 # "Reports": [dashboard, bugs, alerts],
-                "Tools": [search, searchhistory, companydirectory],
+                "Tools": [search, searchhistory, companydirectory, webscraping],
                 "Info": [about],
-                "Troubleshoot": [webscraping, troubleshooting]
+                "Troubleshoot": [troubleshooting]
                 
             }
         )
