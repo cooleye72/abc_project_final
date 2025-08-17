@@ -1,0 +1,19 @@
+name: Keep Streamlit App Alive
+on:
+  schedule:
+    # Runs at :00 every 6 hours (UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: |
+          # Add 2-second delay to avoid being flagged as a bot
+          sleep 2
+          curl -sSf "https://abcjeronai.streamlit.app" \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            > /dev/null
+          echo "✅ Successfully pinged app at $(date -u)"
