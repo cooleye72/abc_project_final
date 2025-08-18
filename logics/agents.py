@@ -163,8 +163,8 @@ def consultant_task(company_data: str, web_findings: str):
             2) Technical capabilities 
             3) Business value proposition 
             4) Recommendation 
-            5) Accredited or Spark company status 
-            6) TAL readiness status (If there is TAL Ready, please indicate else put Not applicable) 
+            5) Indicate either "Accredition" or "Spark" company status 
+            6) TAL readiness status (If it is TAL Ready, please indicate "TAL Ready" else put "Not applicable") 
             7) Website URL Link from IMDA directory
             
         You may include additional insight that offer relevant technologies beneficial to the user. Just indicate the Company Name and Website URL Link only.

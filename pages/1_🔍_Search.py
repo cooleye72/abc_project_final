@@ -122,7 +122,7 @@ def display_results():
                     3. Include 3 recommendations maximum, ordered by relevance, minimum 60% match score
                     4. If no companies match well, explain why and suggest alternative approaches
                     4. If no good matches exist, explain why and suggest alternative approaches
-                    5. End with: "Would you like me to refine these recommendations or provide more details on any company?"
+                    5. End with: Please provide a final closing statement that can be used at the end of a recommendation. The statement should encourage them to provide for more detailed information if needed to improve the recommendations. It needs to be crafted as a one-off response, so it should be self-contained and assume no previous conversational history. The tone should be helpful and professional.
                     6. Never hallucinate details - if info isn't in the context, say so
                     </Response Requirements>
 
