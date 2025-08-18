@@ -220,7 +220,7 @@ def login_page():
                 <div style="flex:1; border-top:1px solid #ddd;"></div>
             </div>
             """, unsafe_allow_html=True)
-           st.markdown("<p style='text-align: center; font-size: small;'>For admin login only</p>", unsafe_allow_html=True))
+           st.markdown("<p style='text-align: center; font-size: small;'>For admin login only</p>", unsafe_allow_html=True)
             
             handle_email_login()
             
