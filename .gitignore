@@ -37,7 +37,7 @@ projectalpha3.11v2/
 projalpha
 projalpha*/
 .excalidraw
-.csv
+*.csv
 .devcontainer/
 .bk*
 .bk
