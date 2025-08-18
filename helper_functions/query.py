@@ -23,6 +23,9 @@ singapore_tz = tz('Asia/Singapore')
 def save_query_to_csv(query_data: dict):
     """Save a single query entry to CSV file"""
     try:
+        # Ensure logs directory exists
+        os.makedirs('logs', exist_ok=True)
+        
         # Convert to DataFrame
         df = pd.DataFrame([query_data])
         
